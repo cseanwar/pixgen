@@ -4,7 +4,7 @@ import PhotoCard from "@/components/PhotoCard";
 const AllPhotosPage = async ({searchParams}) => {
     const {category} = await searchParams;
     console.log(category)
-    const res = await fetch('https://pixgen-sand.vercel.app/data.json', { cache: 'no-store' });
+    const res = await fetch('/data.json', { cache: 'no-store' });
     const photos = await res.json()
 
     const filteredPhotos = category ? photos.filter(photo => photo.category.toLowerCase() == category.toLowerCase()) : photos
