@@ -1,7 +1,7 @@
 import PhotoCard from "./PhotoCard";
 
 const TopGenerations = async () => {
-    const res = await fetch('https://pixgen-chi-pink.vercel.app/data.json', { cache: 'no-store' });
+    const res = await fetch('https://pixgen-chi-pink.vercel.app/data.json');
     const photos = await res.json();
     const topPhotos = photos.slice(0, 8);
 
