@@ -1,10 +1,9 @@
 import PhotoCard from "./PhotoCard";
 
 const TopGenerations = async () => {
-    const res = await fetch('/data.json')
-    const photos = await res.json()
-    const topPhotos = photos.slice(0, 8)
-
+    const res = await fetch('/data.json', { cache: 'no-store' });
+    const photos = await res.json();
+    const topPhotos = photos.slice(0, 8);
 
 
 
