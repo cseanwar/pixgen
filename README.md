@@ -19,7 +19,7 @@ PixGen is built for creators, designers, and AI art enthusiasts who want to:
 - Manage their profile and generated image history
 - Access tiered plans via a pricing page for different generation limits
 
-The project demonstrates a full-stack Next.js application with user authentication (email/password + Google OAuth), a categorised image gallery, protected routes, and an AI image generation workflow.
+The project demonstrates a full-stack Next.js application with user authentication (email/password + Google OAuth), a categorized image gallery, protected routes, and an AI image generation workflow.
 
 ---
 
